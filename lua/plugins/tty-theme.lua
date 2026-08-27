@@ -18,8 +18,8 @@ local palettes = {
     base0C = "#94e2d5", base0D = "#89b4fa", base0E = "#cba6f7", base0F = "#f2cdcd",
   },
   kanagawa = {
-    -- base00 darkened to #121212 to match colorscheme.lua's sumiInk3 override
-    base00 = "#121212", base01 = "#2A2A37", base02 = "#223249", base03 = "#727169",
+    -- base00 darkened to #0a0a0a to match colorscheme.lua's sumiInk3 override
+    base00 = "#0a0a0a", base01 = "#2A2A37", base02 = "#223249", base03 = "#727169",
     base04 = "#C8C093", base05 = "#DCD7BA", base06 = "#938AA9", base07 = "#363646",
     base08 = "#C34043", base09 = "#FFA066", base0A = "#DCA561", base0B = "#98BB6C",
     base0C = "#7FB4CA", base0D = "#7E9CD8", base0E = "#957FB8", base0F = "#D27E99",
@@ -31,7 +31,8 @@ local palettes = {
     base0C = "#56b6c2", base0D = "#61afef", base0E = "#c678dd", base0F = "#993939",
   },
   bamboo = {
-    base00 = "#252623", base01 = "#2f312c", base02 = "#383b35", base03 = "#5b5e5a",
+    -- base00 darkened to #0a0a0a to match colorscheme.lua's bg0 override
+    base00 = "#0a0a0a", base01 = "#2f312c", base02 = "#383b35", base03 = "#5b5e5a",
     base04 = "#838781", base05 = "#f1e9d2", base06 = "#e2c792", base07 = "#ffffff",
     base08 = "#e75a7c", base09 = "#ff9966", base0A = "#dbb651", base0B = "#8fb573",
     base0C = "#70c2be", base0D = "#57a5e5", base0E = "#aaaaff", base0F = "#f08080",

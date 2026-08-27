@@ -61,10 +61,10 @@ return {
     cond = not vim.g.is_console,
     priority = 1000,
     opts = {
-      -- sumiInk3 is Wave's background source color (default #223249); darkened here to a
-      -- near-black #121212. Other UI shades (cursorline, floats, etc.) derive from separate
+      -- sumiInk3 is Wave's background source color (default #223249); darkened here to
+      -- near-black #0a0a0a. Other UI shades (cursorline, floats, etc.) derive from separate
       -- palette entries, so they stay distinct rather than collapsing to the same flat black.
-      colors = { palette = { sumiInk3 = "#121212" } },
+      colors = { palette = { sumiInk3 = "#0a0a0a" } },
     },
   },
   {
@@ -72,7 +72,11 @@ return {
     lazy = vim.g.is_console or vim.g.colorscheme ~= "bamboo",
     cond = not vim.g.is_console,
     priority = 1000,
-    opts = {},
+    opts = {
+      -- bg0 is vulgaris's (the default style) background source color (default #252623);
+      -- darkened here to near-black #0a0a0a, matching Kanagawa's treatment above.
+      colors = { bg0 = "#0a0a0a" },
+    },
   },
   {
     "ellisonleao/gruvbox.nvim",
