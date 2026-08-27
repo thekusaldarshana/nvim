@@ -3,11 +3,12 @@
 -- ~/.config/tty-theme/*.sh), so this actually renders correctly with no truecolor available —
 -- unlike catppuccin/onedark/kanagawa/bamboo, which are guifg-only and would look colorless here.
 --
--- Palettes are base16 ports of the same four themes/flavours used in colorscheme.lua:
+-- Palettes are base16 ports of the same themes/flavours used in colorscheme.lua:
 --   catppuccin -> official Catppuccin Mocha base16
 --   kanagawa   -> kanagawa.nvim's official "Kanagawa" (Wave) base16 export
 --   onedark    -> derived from onedark.nvim's "dark" style palette
 --   bamboo     -> derived from bamboo.nvim's default "vulgaris" style palette
+--   gruvbox    -> the standard/well-known base16-gruvbox-dark-medium palette
 
 local palettes = {
   catppuccin = {
@@ -33,6 +34,12 @@ local palettes = {
     base04 = "#838781", base05 = "#f1e9d2", base06 = "#e2c792", base07 = "#ffffff",
     base08 = "#e75a7c", base09 = "#ff9966", base0A = "#dbb651", base0B = "#8fb573",
     base0C = "#70c2be", base0D = "#57a5e5", base0E = "#aaaaff", base0F = "#f08080",
+  },
+  gruvbox = {
+    base00 = "#282828", base01 = "#3c3836", base02 = "#504945", base03 = "#665c54",
+    base04 = "#bdae93", base05 = "#d5c4a1", base06 = "#ebdbb2", base07 = "#fbf1c7",
+    base08 = "#fb4934", base09 = "#fe8019", base0A = "#fabd2f", base0B = "#b8bb26",
+    base0C = "#8ec07c", base0D = "#83a598", base0E = "#d3869b", base0F = "#d65d0e",
   },
 }
 

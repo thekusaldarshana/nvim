@@ -11,7 +11,7 @@
 -- On the console, follow whatever `tty-theme <name>` last set (so the ANSI palette applied to
 -- the raw terminal and Neovim's mini.base16 palette always match). Elsewhere, pick your mood
 -- here — or switch anytime with <leader>uc.
-vim.g.colorscheme = "catppuccin" -- one of: catppuccin | onedark | kanagawa | bamboo
+vim.g.colorscheme = "catppuccin" -- one of: catppuccin | onedark | kanagawa | bamboo | gruvbox
 if vim.g.is_console then
   local state = vim.fn.expand("~/.config/tty-theme/current")
   if vim.fn.filereadable(state) == 1 then
@@ -68,5 +68,12 @@ return {
     cond = not vim.g.is_console,
     priority = 1000,
     opts = {},
+  },
+  {
+    "ellisonleao/gruvbox.nvim",
+    lazy = vim.g.is_console or vim.g.colorscheme ~= "gruvbox",
+    cond = not vim.g.is_console,
+    priority = 1000,
+    opts = { contrast = "hard" },
   },
 }
