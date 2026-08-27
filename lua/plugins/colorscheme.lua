@@ -60,7 +60,12 @@ return {
     lazy = vim.g.is_console or vim.g.colorscheme ~= "kanagawa",
     cond = not vim.g.is_console,
     priority = 1000,
-    opts = {},
+    opts = {
+      -- sumiInk3 is Wave's background source color (default #223249); darkened here to a
+      -- near-black #121212. Other UI shades (cursorline, floats, etc.) derive from separate
+      -- palette entries, so they stay distinct rather than collapsing to the same flat black.
+      colors = { palette = { sumiInk3 = "#121212" } },
+    },
   },
   {
     "ribru17/bamboo.nvim",
