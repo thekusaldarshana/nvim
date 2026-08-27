@@ -27,10 +27,15 @@ return {
       callback = function(ev)
         local ft = ev.match
         local lang = vim.treesitter.language.get_lang(ft) or ft
+        -- language.add() only registers the mapping; it doesn't verify a parser actually
+        -- exists, so the real failure (e.g. ft "alpha" from the dashboard, which has no
+        -- parser) only surfaces inside start() itself. Guard that call too.
         if not pcall(vim.treesitter.language.add, lang) then
           return
         end
-        vim.treesitter.start(ev.buf, lang)
+        if not pcall(vim.treesitter.start, ev.buf, lang) then
+          return
+        end
         vim.wo[0][0].foldexpr = "v:lua.vim.treesitter.foldexpr()"
         vim.wo[0][0].foldmethod = "expr"
         vim.bo[ev.buf].indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
