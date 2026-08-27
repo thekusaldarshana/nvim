@@ -31,8 +31,8 @@ local palettes = {
     base0C = "#56b6c2", base0D = "#61afef", base0E = "#c678dd", base0F = "#993939",
   },
   bamboo = {
-    -- base00 darkened to #0a0a0a to match colorscheme.lua's bg0 override
-    base00 = "#0a0a0a", base01 = "#2f312c", base02 = "#383b35", base03 = "#5b5e5a",
+    -- base00 darkened to #121212 to match colorscheme.lua's bg0 override
+    base00 = "#121212", base01 = "#2f312c", base02 = "#383b35", base03 = "#5b5e5a",
     base04 = "#838781", base05 = "#f1e9d2", base06 = "#e2c792", base07 = "#ffffff",
     base08 = "#e75a7c", base09 = "#ff9966", base0A = "#dbb651", base0B = "#8fb573",
     base0C = "#70c2be", base0D = "#57a5e5", base0E = "#aaaaff", base0F = "#f08080",

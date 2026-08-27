@@ -74,8 +74,8 @@ return {
     priority = 1000,
     opts = {
       -- bg0 is vulgaris's (the default style) background source color (default #252623);
-      -- darkened here to near-black #0a0a0a, matching Kanagawa's treatment above.
-      colors = { bg0 = "#0a0a0a" },
+      -- darkened here to #121212 (less extreme than Kanagawa's #0a0a0a — that was too dark).
+      colors = { bg0 = "#121212" },
     },
   },
   {
