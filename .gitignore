@@ -1,0 +1,3 @@
+# lazy.nvim's local plugin checkout / lockfile stay in stdpath(data), not here — nothing to ignore
+# from that. Ignore local scratch/session junk only.
+.luarc.json
